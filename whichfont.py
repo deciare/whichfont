@@ -49,6 +49,6 @@ def test(char):
         collection = TTCollection(collectionpath)
         for font in collection.fonts:
             if char_in_font(char, font):
-                print(char + " "+ unicodedata.name(char) + " in " + fontpath) 
+                print(char + " "+ unicodedata.name(char) + " in " + collectionpath) 
 
 test(u"%s" % sys.argv[1])
